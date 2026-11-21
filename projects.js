@@ -52,6 +52,19 @@ window.FEATURED = [
 // Gallery
 window.PROJECTS = [
   {
+    title: "Sunny Side Bakery",
+    url: "https://hyeonhoyu.github.io/Sunny-Side-Bakery/",
+    tagline: "Run Grandma Rose's bakery for five days",
+    desc: "A story-driven bakery game where you look after Grandma Rose's shop on Main Street while she rests. Put dough in the oven, pull it out when it's golden, serve the regulars, and spend your earnings on upgrades and new menu items.",
+    category: "Games",
+    grades: "All ages",
+    tags: ["Bakery", "Time management", "Story", "Korean", "Upgrades"],
+    color: "#E8A33D",
+    mark: "SSB",
+    image: "",
+    shot: "2026-11-21"
+  },
+  {
     title: "Slides to Canvas Video Guide",
     url: "https://hyeonhoyu.github.io/Slides-to-Canvas-Video-Guide/",
     tagline: "From slides to Canvas: your presentation video in three steps",
