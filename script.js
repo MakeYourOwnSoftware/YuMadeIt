@@ -62,10 +62,12 @@
   /* ---------- Gallery filters ---------- */
   var FAV = "Favorites";
   var everything = (window.FEATURED || []).concat(all);
-  function inCat(p, c) { return c === "All" || (c === FAV ? isFav(p) : p.category === c); }
+  // A project can sit in one category ("Games") or several (["Games", "Jobs"]).
+  function catsOf(p) { return [].concat(p.category || []); }
+  function inCat(p, c) { return c === "All" || (c === FAV ? isFav(p) : catsOf(p).indexOf(c) >= 0); }
   function favCount() { return everything.filter(isFav).length; }
   var cats = ["All", FAV];
-  all.forEach(function (p) { if (p.category && cats.indexOf(p.category) < 0) cats.push(p.category); });
+  all.forEach(function (p) { catsOf(p).forEach(function (c) { if (cats.indexOf(c) < 0) cats.push(c); }); });
   var chipBox = document.getElementById("chips");
   chipBox.innerHTML = cats.map(function (c) {
     var n = c === "All" ? all.length : c === FAV ? favCount() : all.filter(function (p) { return inCat(p, c); }).length;
@@ -96,7 +98,7 @@
       '<a class="card in" href="' + esc(p.url) + '" target="_blank" rel="noopener" style="--c:' + esc(p.color || "#2b3a67") + '">' +
         '<div class="card-thumb">' + thumb(p) +
           (p.grades ? '<span class="grade">' + esc(p.grades) + "</span>" : "") +
-          (p.category ? '<span class="cat">' + esc(p.category) + "</span>" : "") +
+          (catsOf(p).length ? '<span class="cat">' + esc(catsOf(p).join(" · ")) + "</span>" : "") +
           starBtn(p) +
         "</div>" +
         '<div class="card-body">' +
@@ -167,7 +169,7 @@
     var list = source.filter(function (p) {
       if (!inCat(p, state.cat)) return false;
       if (!state.q) return true;
-      var hay = [p.title, p.tagline, p.desc, p.grades, p.category].concat(p.tags || []).join(" ").toLowerCase();
+      var hay = [p.title, p.tagline, p.desc, p.grades].concat(catsOf(p)).concat(p.tags || []).join(" ").toLowerCase();
       return hay.indexOf(state.q) >= 0;
     });
     var shown = state.expanded ? list : list.slice(0, PAGE);

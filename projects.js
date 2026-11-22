@@ -8,7 +8,8 @@
     url       Live link
     tagline   One short line
     desc      One or two sentences
-    category  One of: "Learning" | "Games" | "Classroom Tools" | "Teacher Prep" | "Languages"
+    category  One of: "Learning" | "Games" | "Jobs" | "Classroom Tools" | "Teacher Prep" | "Languages"
+              To list a project in more than one, use a list: ["Games", "Jobs"]
     grades    e.g. "K-2", "3-5", "K-5", "Teachers", "All ages"
     tags      Short labels (also used by the search box)
     color     Card color (hex)
@@ -52,11 +53,23 @@ window.FEATURED = [
 // Gallery
 window.PROJECTS = [
   {
+    title: "Puffin Island Post",
+    url: "https://hyeonhoyu.github.io/Puffin-Island-Post/",
+    tagline: "One bike, one mailbag, six neighbors, five days of letters",
+    desc: "A cozy game where you are the island's mail carrier. Ride your bike around Puffin Island and deliver letters to six neighbors over five days. Roads are faster than grass, so plan your route.",
+    category: ["Games", "Jobs"],
+    grades: "All ages",
+    tags: ["Mail carrier", "Community helpers", "Map skills", "Route planning", "Bike"],
+    color: "#2E86AB",
+    mark: "PIP",
+    image: ""
+  },
+  {
     title: "Sunny Side Bakery",
     url: "https://hyeonhoyu.github.io/Sunny-Side-Bakery/",
     tagline: "Run Grandma Rose's bakery for five days",
     desc: "A cozy story game where you keep Grandma Rose's Main Street bakery running while she rests. Bake muffins, donuts, cinnamon rolls, and pies, serve the regulars, and uncover a sweet small-town love story. Two bonus games, Secret Recipe Hunt and Bake Buddies, are included.",
-    category: "Games",
+    category: ["Games", "Jobs"],
     grades: "All ages",
     tags: ["Bakery", "Time management", "Story", "Puzzles", "Merge game"],
     color: "#E8A33D",
