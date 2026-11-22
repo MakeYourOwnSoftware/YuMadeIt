@@ -55,14 +55,13 @@ window.PROJECTS = [
     title: "Sunny Side Bakery",
     url: "https://hyeonhoyu.github.io/Sunny-Side-Bakery/",
     tagline: "Run Grandma Rose's bakery for five days",
-    desc: "A story-driven bakery game where you look after Grandma Rose's shop on Main Street while she rests. Put dough in the oven, pull it out when it's golden, serve the regulars, and spend your earnings on upgrades and new menu items.",
+    desc: "A cozy story game where you keep Grandma Rose's Main Street bakery running while she rests. Bake muffins, donuts, cinnamon rolls, and pies, serve the regulars, and uncover a sweet small-town love story. Two bonus games, Secret Recipe Hunt and Bake Buddies, are included.",
     category: "Games",
     grades: "All ages",
-    tags: ["Bakery", "Time management", "Story", "Korean", "Upgrades"],
+    tags: ["Bakery", "Time management", "Story", "Puzzles", "Merge game"],
     color: "#E8A33D",
     mark: "SSB",
-    image: "",
-    shot: "2026-11-21"
+    image: "assets/projects/sunny-side-bakery.webp"
   },
   {
     title: "Slides to Canvas Video Guide",
