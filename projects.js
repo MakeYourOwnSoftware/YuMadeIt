@@ -53,6 +53,19 @@ window.FEATURED = [
 // Gallery
 window.PROJECTS = [
   {
+    title: "Notes to Map",
+    url: "https://hyeonhoyu.github.io/Note-to-Map/",
+    tagline: "Rough notes in. A clean doc and a living map out.",
+    desc: "Paste or type rough notes and get an organized document you can copy as Markdown, plus a mind map or infographic that updates as you add more. Choose on-device AI, cloud AI, or a basic mode with no AI. Free, with no account.",
+    category: "Classroom Tools",
+    grades: "All ages",
+    tags: ["Note taking", "Mind map", "Infographic", "Summarizing", "Study skills", "AI"],
+    color: "#2A9D8F",
+    mark: "N2M",
+    image: "",
+    shot: "2026-11-26"
+  },
+  {
     title: "Puffin Island Post",
     url: "https://hyeonhoyu.github.io/Puffin-Island-Post/",
     tagline: "One bike, one mailbag, six neighbors, five days of letters",
