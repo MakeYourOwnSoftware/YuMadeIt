@@ -38,15 +38,16 @@ window.FEATURED = [
     image: "assets/projects/wonder-pond.webp"
   },
   {
-    title: "Pip's AI Lab",
-    url: "https://pips-ai-lab.github.io/",
-    tagline: "AI literacy for kids",
-    desc: "Pip is a robot who is still learning. Students help Pip, play missions, and collect stamps in their AI passport.",
-    points: ["Sprout Explorers (K-2): short missions with pictures and read-aloud help", "Trailblazers (3-5): run experiments, test Pip, and think about fairness", "Read-to-me audio, an AI passport, and a Teacher Room"],
-    grades: "K-5",
+    title: "AI Now",
+    url: "https://hyeonhoyu.github.io/ai-now/",
+    tagline: "Thinking together about AI",
+    desc: "Sixteen free interactive lecture decks on AI in education and society, across two seasons. Run a deck in the browser and students join from their phones with a QR code, no logins.",
+    points: ["Live class voting and discussion prompts built into every deck", "Students join by QR code on their phones, with no accounts", "Turn class results into a draft social post to share"],
+    grades: "Teachers",
     color: "#6C5CE7",
-    mark: "Pip",
-    image: "assets/projects/pips-ai-lab.webp"
+    mark: "AI",
+    image: "",
+    shot: "2026-11-27"
   }
 ];
 
