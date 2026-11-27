@@ -53,6 +53,19 @@ window.FEATURED = [
 // Gallery
 window.PROJECTS = [
   {
+    title: "Easy Score Maker",
+    url: "https://hyeonhoyu.github.io/Easy-Score-Maker/",
+    tagline: "Tap the keys, hear the notes, print the score",
+    desc: "Write sheet music by tapping a piano keyboard and hearing each note as you add it. Set the clef, key, and time signature, add rests and accidentals, then export to PDF or Word. Frog Baby guides a built-in tutorial.",
+    category: ["Classroom Tools", "Teacher Prep"],
+    grades: "All ages",
+    tags: ["Music", "Sheet music", "Notation", "Piano", "Composing", "PDF", "Word"],
+    color: "#7B5CD6",
+    mark: "ESM",
+    image: "",
+    shot: "2026-11-27"
+  },
+  {
     title: "Notes to Map",
     url: "https://hyeonhoyu.github.io/Note-to-Map/",
     tagline: "Rough notes in. A clean doc and a living map out.",
